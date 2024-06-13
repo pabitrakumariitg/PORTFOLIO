@@ -1,0 +1,140 @@
+/* General styles */
+.About {
+  background-image: linear-gradient(to bottom, #fdfdfd 70%, #ace0f9 100%);
+  margin-top: 15vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 5vh 2vw;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Adjusted alignment */
+  align-items: center; /* Adjusted alignment */
+  flex-wrap: wrap;
+}
+
+.about-image {
+  img {
+    width: 100%; /* Adjusted image width */
+    max-width: 300px;
+  }
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 3vh;
+}
+
+.container-right {
+  width: calc(70% - 1vw); /* Adjusted width */
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.about-items {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 1.5vh 2vw;
+
+  width: 100%;
+  border-left: 2px solid blue;
+  transition: background 0.9s linear;
+}
+
+.about-items:hover {
+  cursor: pointer;
+
+  background: linear-gradient(
+    90deg,
+    rgba(64, 138, 255, 1) 0%,
+
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.description h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1vh;
+}
+
+.description h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+  .About {
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .About {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .About {
+    width: 95vw;
+  }
+
+  .container {
+    flex-direction: column; /* Adjusted for smaller screens */
+    align-items: center; /* Adjusted for smaller screens */
+  }
+
+  .about-image {
+    margin-bottom: 2vh; /* Adjusted for smaller screens */
+  }
+
+  .about-items {
+    padding: 1.2vh 1vw; /* Adjusted for smaller screens */
+  }
+
+  .description h3 {
+    font-size: 1.1rem; /* Adjusted font size for smaller screens */
+  }
+
+  .description h5 {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .about-items {
+    gap: 0.5vw; /* Adjusted gap for smaller screens */
+  }
+
+  .description h3 {
+    font-size: 1rem; /* Adjusted font size for smallest screens */
+  }
+
+  .description h5 {
+    font-size: 0.8rem; /* Adjusted font size for smallest screens */
+  }
+}

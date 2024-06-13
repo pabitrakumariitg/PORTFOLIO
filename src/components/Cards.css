@@ -1,0 +1,106 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 25vw;
+  height: 70vh;
+  transform: scale(0.8);
+}
+
+.cards-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+ 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: url("background-image.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.cards-container:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cards-container img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cards-container img:hover {
+  transform: scale(1.2);
+}
+
+.cards-container h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.technologies-used {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.technologies-used button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.technologies-used button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.viewProject {
+  display: flex;
+  justify-content: space-around;
+}
+
+.viewProject button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.viewProject button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    width: 80%;
+    height: auto;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cards-container {
+    width: 95%;
+    height: auto;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+.footer {
+    background-color: #ace0f9 ;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+
+    justify-content: space-around;
+    align-items: center;
+  }
+  

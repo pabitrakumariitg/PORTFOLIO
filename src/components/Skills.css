@@ -1,0 +1,82 @@
+.skills5 {
+  background-image: linear-gradient(to bottom, #fdfdfd 40%, #ace0f9 100%);
+  margin-right: 15vw;
+  margin-top: 10vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+  
+  .mySkills {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+
+  }
+  
+  .skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .skillsContainer img {
+    background: aliceblue;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .skillsContainer img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    background-color: #f0f8ff;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 1200px) {
+    .skillsContainer img {
+      width: 8vh;
+      height: 8vh;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .skillsContainer img {
+      width: 7vh;
+      height: 7vh;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .skillsContainer img {
+      width: 6vh;
+      height: 6vh;
+    }
+  
+    .mySkills {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .skillsContainer img {
+      width: 5vh;
+      height: 5vh;
+    }
+  
+    .mySkills {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,47 @@
+/* General styles for the Projects component */
+.my-projects {
+  margin: 10vh 0; /* Center the container vertically and horizontally */
+  padding: 5vh 5vw;
+  margin-left: 15VW;
+  max-width: 100%; /* Limit container width */
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #fdfdfd 0%, #ace0f9 100%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.my-projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.allProjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1024px) {
+  .my-projects h2 {
+    font-size: 2rem; /* Adjust heading size for medium screens */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-projects {
+    padding: 5vh 2vw; /* Reduce padding for smaller screens */
+  }
+  
+  .my-projects h2 {
+    font-size: 1.75rem; /* Adjust heading size for small screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .my-projects h2 {
+    font-size: 1.5rem; /* Adjust heading size for very small screens */
+  }
+}
