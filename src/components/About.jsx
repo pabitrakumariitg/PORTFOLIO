@@ -7,7 +7,7 @@ import TerminalIcon from "@mui/icons-material/Terminal";
 const About = () => {
   return (
     <div className="About">
-      <div className="heading">ABOUT ME</div>
+      <div className="heading">ABOUT MEc </div>
       <div className="container">
         <div className="about-image">
           <img src="about.jpg" alt="About" />
