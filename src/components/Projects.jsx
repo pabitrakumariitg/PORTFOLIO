@@ -9,9 +9,9 @@ const Projects = () => {
       <div className="allProjects">
         <UserCard
           float
-          href="https://github.com/pabitrakumariitg"
+          href="https://github.com/pabitrakumariitg/ZCODER"
           header="https://i.imgur.com/w5tX1Pn.jpg"
-          name="PROJECT"
+          name="ZCODER"
           stats={[
             {
               name: "React | Node | MongoDB | Express",
@@ -20,20 +20,21 @@ const Projects = () => {
         />
         <UserCard
           float
-          href="https://github.com/pabitrakumariitg"
+          href="https://github.com/pabitrakumariitg/WordMaze."
           header="https://i.imgur.com/w5tX1Pn.jpg"
-          name="PROJECT"
+          
+          name="WORDMAZE"
           stats={[
             {
-              name: "React | Node | MongoDB | Express",
+              name: "React",
             },
           ]}
         />
         <UserCard
           float
-          href="https://github.com/pabitrakumariitg"
+          href="https://github.com/pabitrakumariitg/CAMPUS-OLX"
           header="https://i.imgur.com/w5tX1Pn.jpg"
-          name="PROJECT"
+          name="CAMPUS-OLX"
           stats={[
             {
               name: "React | Node | MongoDB | Express",

@@ -31,7 +31,7 @@ const Home = () => {
           <button>My works</button>
         </div>
         <a
-          href="https://drive.google.com/file/d/1wPaxgYwIPRTYgFGgYk1SMdKPnyyh8VU3/view"
+          href="https://drive.google.com/file/d/1hlJNdu1VJhAhl9BwPe63Jd_SVC0Ai1xG/view?usp=sharing"
           className="resume-link"
         >
           Click here to view my Resume
